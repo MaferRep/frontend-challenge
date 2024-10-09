@@ -4,7 +4,7 @@
 
 This front-end application was developed in Angular, with styling achieved using pure CSS to showcase fundamental web technologies. The design is fully responsive, adapting seamlessly to mobile, tablet, and desktop screens. Special attention was given to maintaining consistent card proportions across all devices to ensure a uniform user experience. 
 
-## live demo 
+## Live demo 
 https://maferrep.github.io/frontend-challenge/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
