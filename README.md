@@ -36,6 +36,7 @@ The NavbarComponent provides a responsive navigation bar with a brand logo, menu
 - Menu Toggle: Opens and closes the mobile menu (menuOpen state).
   
 - Sections:
+
   - Brand: Displays a logo.
   - Links: Items like "ITEMS" and "ACCOUNTS" for medium and small screens.
   - Controls: Includes currency selector, cart, and sign-in options.
