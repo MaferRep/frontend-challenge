@@ -1,0 +1,49 @@
+.paginator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    button {
+      background: none;
+      border: 1px solid #6E75FB;
+      color: #6E75FB;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      
+      &:hover {
+        background-color: #6E75FB;
+        color: white;
+      }
+  
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+  
+    span {
+      margin: 0 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      color: white;
+      transition: background-color 0.3s ease;
+  
+      &.active {
+        background-color: #6E75FB;
+        border-radius: 5px;
+      }
+  
+      &:hover:not(.active) {
+        background-color: #3A3A58;
+        border-radius: 5px;
+      }
+  
+      &.dots {
+        cursor: default;
+        color: gray;
+      }
+    }
+  }
+  

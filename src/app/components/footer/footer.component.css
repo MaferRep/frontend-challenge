@@ -1,0 +1,175 @@
+.footer {
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(#1e1e2d87, #1e1e2d3f);
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.footer-separator {
+  height: 5px;
+  background: linear-gradient(90deg, #1e9f743a, #1e9f75, #1e9f743e);
+  animation: gradientMove 3s infinite linear;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.payment-methods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+  background-color: #121921;
+}
+
+.payment-methods img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.payment-methods img:nth-child(-n+4) {
+  width: 40px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.social a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social a img:hover {
+  transform: scale(1.1);
+}
+
+.footer-break {
+  border: none;
+  border-top: 1px solid #8376c394;
+  margin: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.footer-section {
+  flex: 1;
+  max-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #00dfa4;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: rgba(255, 255, 255, 0.682);
+  text-decoration: none;
+}
+
+.contact-info img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.social {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .payment-methods,
+  .trustpilot {
+    display: none;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    max-width: none;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section h4, 
+  .footer-section ul li {
+    text-align: center;
+  }
+}
+
+
+.footer-section.trustpilot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.trustpilot-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.trustpilot-logo {
+  width: 40px; /* Ajusta el tamaño del logo según tus preferencias */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#star-rating-container {
+  display: flex;
+  align-items: center;
+}
+
+.full-star,
+.empty-star,
+.partial-star {
+  width: 20px;
+  height: auto;
+}
+
+
+.rating-number {
+  font-size: 0.9rem;
+  color: #1e9f75;
+  margin-top: 5px;
+}

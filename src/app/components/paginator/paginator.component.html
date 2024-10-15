@@ -1,0 +1,35 @@
+<div class="paginator">
+    <button (click)="prevPage()" [disabled]="currentPage === 1">&lt;</button>
+  
+    <!-- <ng-container *ngFor="let page of pagesToShow">
+      <span *ngIf="page !== '...'" 
+            [class.active]="page === currentPage"
+            (click)="goToPage(page)">
+        {{ page }}
+      </span> -->
+
+      <!-- <span *ngIf="page === '...'"> -->
+
+      <ng-container>
+        <span>
+            1
+        </span>
+
+        <span>
+            2
+        </span>
+
+        <span>
+            3
+        </span>
+
+        <span>
+        ...
+      </span>
+    </ng-container>
+  
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">&gt;</button>
+  </div>
+  
+
+  <!-- the code that is commented is because I wanted to add the functionality to show the number of pages, but as I am not getting data from anywhere I preferred to leave it empty. -->

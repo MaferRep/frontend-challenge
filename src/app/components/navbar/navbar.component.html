@@ -1,0 +1,23 @@
+<nav class="navbar">
+  <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+  <div class="navbar__brand">
+    <img src="https://chicksgold.com/logo/chicks-logo-large.svg" alt="Chicks Gold Logo" class="brand-logo">
+  </div>
+
+  <!-- Medium -->
+  <div class="navbar__links" [class.active]="menuOpen">
+    <button class="dropdown__button">ITEMS</button>
+    <button class="dropdown__button">ACCOUNTS</button>
+    <button class="dropdown__button">SERVICES</button>
+    <button class="dropdown__button">SWAP</button>
+    <button class="dropdown__button">SELL</button>
+    <button class="dropdown__button currency-mobile">USD</button>
+  </div>
+
+  <!-- End -->
+  <div class="navbar__controls">
+    <button class="currency currency-desktop">USD</button>
+    <button class="cart">Cart</button>
+    <button class="sign-in">Sign In</button>
+  </div>
+</nav>

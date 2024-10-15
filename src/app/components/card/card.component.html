@@ -1,0 +1,35 @@
+<div class="card">
+  <div class="card-header">
+    <div class="status-marker on-sale-status">On Sale</div>
+    <div class="stock-status">
+      <span class="badge">In stock</span>
+      <div class="counter-container">
+        <span class="counter-value">{{ counterValue }}</span>
+        <div class="counter-buttons">
+          <button class="increment" (click)="increment()" [disabled]="isIncrementDisabled()">&#9650;</button>
+          <button class="decrement" (click)="decrement()" [disabled]="isDecrementDisabled()">&#9660;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-body">
+    <img [src]="randomImageUrl" alt="Product Image">
+    <h4>{{ randomItemName }}</h4>
+    <div class="price">
+      <span class="current-price">$450.00</span>
+      <span class="original-price">$522.50</span>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipiscing elitr.</p>
+  </div>
+
+  <div class="card-footer">
+    <button class="details-btn">DETAILS</button>
+    <button class="add-btn">
+      ADD 
+      <span class="cart-icon">
+        <!-- <ion-icon name="cart"></ion-icon> -->
+      </span>
+    </button>
+  </div>
+</div>
